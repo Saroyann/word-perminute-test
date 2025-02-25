@@ -1,0 +1,239 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	position: relative;
+	font-family: 'arial';
+	background-image: url("./asset/a.jpg");
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #ADD8E6;
+	width: 100vw;
+}
+
+.navbar, p {
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	padding: 10px;
+	text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width:100%;
+    text-align: center;
+    background-color: #87CEEB; /* Warna background yang diinginkan */
+    padding: 10px;
+	padding: 1rem;
+}
+
+div {
+	position: absolute;
+	display: flex;
+	flex-direction: row; 
+	justify-content: center;
+}
+
+/* Container utama di tengah tampilan */
+#container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;	
+    height: calc(100vh - 80px);
+    margin-top: 60px; 
+	width: 70%;
+}
+
+/* Inner container untuk memisahkan input-box dan preview-box */
+#inner-container {
+    display: flex;
+    flex-direction: column;	
+    align-items: space-evenly; 
+    width: 50%; 
+    max-width: 600px;  
+	background-color: #F0F0F0; 
+    padding: 70px; 
+    border-radius: 10px; 
+	box-shadow: 5px 5px #888888;
+	margin-top:120px;
+}
+
+/* Input box */
+#input-box {
+    width: 100%; 
+    text-align: center; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+#input-box #text-input {
+	font-size: 1rem;
+}
+
+#input-box input {
+    width: 57%; 
+    padding: 10px;  
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+	position: absolute;
+	left: 0%;
+}
+
+#input-box button {
+	background-color: #87CEEB;
+	color: white;
+	border: none;
+	padding: 10px;
+	width: 90px;
+    cursor: pointer; 
+    position: absolute;
+    right: 25%;	
+	border-radius: 10px;
+}
+
+#input-box button:hover {
+	background-color: #CCCCCC;
+}
+
+#input-box #timer {
+	background-color: white;
+	color: black;
+	border: solid black 2px;
+	padding: 10px;
+	width: 60px;
+    cursor: pointer;
+    position: absolute;
+    right: 12%; 
+	border-radius: 10px;	
+	transition: color 0.3s ease;
+}
+
+
+#wpm-preview {
+    width: 350px;
+    height: 200px;
+    padding: 15px;	
+    text-align: center; 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	background-color: #F0F0F0; 
+	margin-left: 100%;
+	margin-bottom: 18%;
+	border-radius: 20px;
+	box-shadow: 5px 5px #888888;
+}
+
+#wpm-preview #display {
+	background-color: white;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#wpm-preview #display h2 {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+#wpm-preview #display h1 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+#box {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+#box #text-display {
+	border: solid black 1px;
+	background-color: white;
+	border-radius: 20px;
+	width: 690px;
+	height: 115px;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0px 138px 280px 0px;
+}
+
+#box #text-display #text-preview {
+	width: 670px;
+}
+
+#box #text-display #text-preview p {
+	color: black;
+	font-size: 20px;
+	text-align: left;
+}
+
+#box #text-display #text-preview p span {
+	background-color: gray;
+	padding: 1px;
+	color: white;
+}
